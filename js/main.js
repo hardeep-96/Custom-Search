@@ -2,7 +2,7 @@ const search = document.querySelector("#search");
 const matchList = document.querySelector("#match-list");
 
 const searchStates = async searchText => {
-  const res = await fetch("https://gist.githubusercontent.com/jpriebe/d62a45e29f24e843c974/raw/b1d3066d245e742018bce56e41788ac7afa60e29/us_state_capitals.json");
+  const res = await fetch("https://gist.githubusercontent.com/bradtraversy/20dee7787486d10db3bd1f55fae5fdf4/raw/2c06c44dcea55ecbb6fbf20edfd240ec6373b688/state_capitals.json");
   const states = await res.json();
 
   let matches = states.filter(state => {
